@@ -11,7 +11,7 @@ const Tabs = () => {
   };
   return (
     <>
-      <div className="rounded-full">
+      <div className="rounded-full sm:flex">
         {/*dropdown-items */}
 
         <div className="bg-zinc-200 my-5 p-1 rounded-xl">
