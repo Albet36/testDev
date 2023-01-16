@@ -1,6 +1,6 @@
 export const Gallery = () => {
     return(
-       <div>
+       <div className="p-1">
        <h1 className="font-bold text-center text-[30px] uppercase my-[34px]">Packer pen Gallery</h1>
        <div className="grid grid-cols-2 gap-1 sm:grid-cols-5">
      <img src="/slide-img-1.png" className="w-full"/>

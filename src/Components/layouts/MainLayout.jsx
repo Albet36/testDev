@@ -12,14 +12,15 @@ export const MainLayout = ({ children }) => {
   }
   console.log(toggleState);
   return (
-    <div className="to-indigo-50">
+    <div className="to-indigo-50 ">
     <ScrollToTop />
       <div className="sm:px-0">
-        <div className="sm:mx-auto bg-zinc-100">
-          <div className="relative w-full mt-6 rounded-3xl p-2">
+        <div className=" bg-zinc-100 sm:mx-auto sm:bg-white">
+          <div className="relative w-full ">
             <div role="tabpanel" className=" transition duration-300 py-2">
             {toggleState === 1 ?  <Tabs /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
+            
             </div>
           </div>
         
