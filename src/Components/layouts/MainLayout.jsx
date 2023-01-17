@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Gallery } from "../Gallery";
 import { ScrollToTop } from "../ScrollToTop";
-import Tabs from "../Tabs";
+// import Tabs from "../Tabs";
+import { TabsComponent } from "../TabsComponent";
 
 
 export const MainLayout = ({ children }) => {
@@ -15,10 +16,10 @@ export const MainLayout = ({ children }) => {
     <div className="to-indigo-50 ">
     <ScrollToTop />
       <div className="sm:px-0">
-        <div className=" bg-zinc-100 sm:mx-auto sm:bg-white">
+        <div className="sm:mx-auto sm:bg-white">
           <div className="relative w-full ">
-            <div role="tabpanel" className=" transition duration-300 py-2">
-            {toggleState === 1 ?  <Tabs /> : null}
+            <div role="tabpanel" className=" transition duration-300 px-[.5px]">
+            {toggleState === 1 ?  <TabsComponent /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
             
             </div>

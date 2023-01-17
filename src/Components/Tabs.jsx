@@ -149,7 +149,7 @@ const Tabs = () => {
               </button>
             </div>
           </div>
-          {/* <div
+           <div
             className={
               dropdownPencil === 2 || pencil === true
                 ? "block transition lg:bg-gray-100 lg:grid lg:grid-cols-3"
@@ -245,7 +245,7 @@ const Tabs = () => {
                 SHOP ALL
               </button>
             </div>
-          </div> */}
+          </div> 
         </div>
       </div>
     </>
