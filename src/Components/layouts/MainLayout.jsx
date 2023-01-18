@@ -15,10 +15,10 @@ export const MainLayout = ({ children }) => {
   return (
     <div className="to-indigo-50 ">
     <ScrollToTop />
-      <div className="sm:px-0">
-        <div className="sm:mx-auto sm:bg-white">
-          <div className="relative w-full ">
-            <div role="tabpanel" className=" transition duration-300 px-[.5px]">
+      <div className="">
+        <div className="">
+          <div className="">
+            <div role="tabpanel" className=" transition duration-300">
             {toggleState === 1 ?  <TabsComponent /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
             
