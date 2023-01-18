@@ -21,7 +21,7 @@ export const TabsComponent = () => {
   console.log(tabs);
   return (
     <>
-      <div className="lg:mt-[108px] lg:mr-[142px] lg:mb-[50px] lg:ml-[98px]">
+      <div className="lg:mt-[101px] lg:mr-[50px] lg:mb-[20px] lg:ml-[76px]">
         {/*Tabs item */}
         <div className="lg:flex">
           <div className="">
