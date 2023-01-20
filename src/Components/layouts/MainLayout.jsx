@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Gallery } from "../Gallery";
 import { ScrollToTop } from "../ScrollToTop";
 // import Tabs from "../Tabs";
-import { TabsComponent } from "../TabsComponent";
+import { TabComponent } from "./TabComponent";
 
 
-export const MainLayout = ({ children }) => {
+export const MainLayout = () => {
   const [toggleState, setToggleState] = useState(1);
   
   const toggleTab = (index) => {
@@ -18,8 +18,8 @@ export const MainLayout = ({ children }) => {
       <div className="">
         <div className="">
           <div className="">
-            <div role="tabpanel" className=" transition duration-300">
-            {toggleState === 1 ?  <TabsComponent /> : null}
+            <div role="tabpanel" className=" transition duration-300 my-5">
+            {toggleState === 1 ?  <TabComponent /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
             
             </div>

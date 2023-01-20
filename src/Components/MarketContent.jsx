@@ -1,7 +1,7 @@
 import { Discount } from "./Discount";
 import { Product } from "./Product";
 
-export const PenCilsContent = () => {
+export const MarketContent = () => {
   return (
     <div className="lg:grid lg:grid-cols-3 gap-1 bg-gray-100 lg:p-10">
       {/*content */}
@@ -9,7 +9,7 @@ export const PenCilsContent = () => {
         <div className="">
           <div className="text-[21px] font-normal leading-8">
             <p>
-              Graphite Artist Quality Fine Art Drawing and Sketching Pencils Replaceable Nib Pencils. {" "}
+              Graphite Artist Quality Fine Art Drawing and Sketching Market Replaceable Nib Pencils. {" "}
             </p>
           </div>
           <div className="text-[18px] mt-[24px] ml-[18px]">
