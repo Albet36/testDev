@@ -1,45 +1,27 @@
 export const Product = () => {
     return (
-        <div className="grid lg:grid-cols-3 gap-1">
-            <div className="bg-white w-56 h-80 h-full rounded-[18px]">
-                <img src="/product-pen-black.png" className="w-[180px] mx-6 my-[11px]" alt="" />
-                <p className="text-center mt-[2px] mb-[6.75px] ml-[14px] mr-[12px] font-medium
-text-sm">
-                    Aero Mechanical Pencil
-                </p>
-                {/* price content */}
-                <div className="flex ml-[28px] mr-[22px] justify-center leading-7">
-                    <p className="mr-[10px] font-bold">$99.00</p>
-                    <span className="line-through text-[#727272] ml-[4px] mt-[4px] font-normal text-sm
-text-sm">$125.00</span>
-                </div>
-            </div>
-            <div className="bg-white w-56 h-80 h-full rounded-[18px]">
-                <img src="/product-pen-black.png" className="w-[180px] mx-6 my-[11px]" alt="" />
-                <p className="text-center mt-[2px] mb-[6.75px] ml-[14px] mr-[12px] font-medium
-text-sm">Castell Mechanical Pencil
-                </p>
-                {/* price content */}
-                <div className="flex ml-[28px] mr-[22px] justify-center leading-7">
-                    <p className="mr-[10px] font-bold">$75.00</p>
-                    <span className="line-through text-[#727272] ml-[4px] mt-[4px] font-normal text-sm
-text-sm">$99.00</span>
-                </div>
-            </div>
-            <div className="bg-white w-56 h-80 h-full rounded-[18px]">
-                <img src="/product-pen-black.png" className="w-[180px] mx-6 my-[11px]" alt="" />
-                <p className="text-center mt-[2px] mb-[6.75px] ml-[14px] mr-[12px] font-medium
-text-sm">Castell Mechanical Pencil
-                </p>
-                {/* price content */}
-                <div className="flex ml-[28px] mr-[22px] justify-center leading-7">
-                    <p className="mr-[10px] font-bold">$75.00</p>
-                    <span className="line-through text-[#727272] ml-[4px] mt-[4px] font-normal text-sm
-text-sm">$99.00</span>
-                </div>
-            </div>
-           
-
+        <div className="flex">
+           <div className="w-56 h-80 mx-[10.5px] bg-white pt-2.5 px-[22px] rounded-[18px]">
+           <img src="/product-pen-black.png" className="w-[180px] h-[210px]"/>
+          <div className="text-center mt-3.5">
+          <p className="capitalize font-medium text-sm">aero mechanical pencil</p>
+          <div className="flex justify-center mt-[.6rem]">
+          <p className="text-base font-bold ml-[1px] mr-[13px]">$99.00</p>
+          <span className="text-sm line-through text-[#727272] mt-[.19rem]">$125.00</span>
+          </div>
+           </div>
+           </div>
+           <div className="w-56 h-80 mx-[10.5px] bg-white pt-2.5 px-[22px] rounded-[18px]">
+           <img src="/product-pen-black.png" className="w-[180px] h-[210px]"/>
+          <div className="text-center mt-3.5">
+          <p className="capitalize font-medium text-sm">aero mechanical pencil</p>
+          <div className="flex justify-center mt-[.6rem]">
+          <p className="text-base font-bold ml-[1px] mr-[13px]">$99.00</p>
+          <span className="text-sm line-through text-[#727272] mt-[.19rem]">$125.00</span>
+          </div>
+           </div>
+           </div>
+        
         </div>
     )
 }

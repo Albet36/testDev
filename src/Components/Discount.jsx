@@ -1,12 +1,12 @@
 export const Discount = () => {
     return(
-        <div className="flex border-white border-[2px]  lg:rounded-3xl items-baseline mr-9">
-          <div className="flex bg-white text-[#F4B840] py-3 px-5  leading-10 lg:rounded-l-[18px] mr-12">
-            <span className="text-[30px]  lg:font-bold">25%</span>
-            <p className="text-[30px] lg:font-bold mx-3">off</p>
+        <div className="flex">
+          <div className="flex font-bold text-4xl leading-[54px] py-[13px] bg-white  rounded-l-[18px] px-1 text-[#F4B840]">
+            <span className="pl-[2.3rem] pr-3.5">25%</span>
+            <p className="mr-5">off</p>
           </div>
-          <div className="lg:text-[30px]">
-            <p className="font-light">Offer Applicable on All Our Pencils</p>
+          <div className="pl-1 pr-[3.4rem] border-white border-[3px] rounded-r-[18px]">
+            <p className="text-[25px] px-[1.2rem] pt-5">Offer Applicable on All Our Pencils</p>
           </div>
         </div>
     )
