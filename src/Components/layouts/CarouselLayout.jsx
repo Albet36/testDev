@@ -18,6 +18,34 @@ export const CarouselLayout = () => {
       setToggleState(1)
     }
   }
+  // const handleDragEnter = () => {
+  //   if (toggleState === 1) {
+  //         setToggleState(2)
+  //       } else if (toggleState === 2) {
+  //         setToggleState(1)
+  //       }
+  // };
+  // const handleDragLeave = () => {
+  //   if (toggleState === 1) {
+  //     setToggleState(2)
+  //   } else if (toggleState === 2) {
+  //     setToggleState(1)
+  //   };
+  // };
+  // const handleDragOver = () => {
+  //   if (toggleState === 1) {
+  //     setToggleState(2)
+  //   } else if (toggleState === 2) {
+  //     setToggleState(1)
+  //   };
+  // };
+  // const handleDrop = () => {
+  //   if (toggleState === 1) {
+  //     setToggleState(2)
+  //   } else if (toggleState === 2) {
+  //     setToggleState(1)
+  //   };
+  // };
   console.log(toggleState);
   return (
     <div className="to-indigo-50 ">
@@ -25,10 +53,9 @@ export const CarouselLayout = () => {
       <div className="">
         <div className="">
           <div className="">
-            <div role="tabpanel"  onDrop={e => handleDrop(e)}
-      onDragOver={e => handleDragOver(e)}
-      onDragEnter={e => handleDragEnter(e)}
-      onDragLeave={e => handleDragLeave(e)} className=" transition duration-300 my-5 cursor-pointer">
+            <div role="tabpanel"  
+           onDragEnd={handleSlide}
+            className=" transition duration-300 my-5 cursor-grabbing">
             {toggleState === 1 ?  <TabComponent /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
             
