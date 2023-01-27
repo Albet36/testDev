@@ -3,6 +3,10 @@
     import clsx from "clsx";
 import { useState } from "react";
  import { PenCilsContent } from "../PencilsContent";
+import { DrawingTab } from "../tabs/Drawing";
+import { MarketTab } from "../tabs/MarketTab";
+import { NoteBookTab } from "../tabs/NoteBook";
+import { PenCilsTab } from "../tabs/PencilsTab";
 // import {DropUp} from '../../svg/DropUp'
 // import {DropDown} from '../../svg/DropDown'
 // import { MarketContent } from "../MarketContent";
@@ -22,17 +26,36 @@ import { useState } from "react";
       console.log(tabs);
       return (
         <>
-          <div>
+          <div className="pl-[19.5rem] pr-[23rem]">
          {/*tab item */}
-          <div className="block sm:flex">
-          <div className="p-5 mx-1" onClick={() => handleTabs(1)}>one</div>
+          <div className="block sm:flex mx-5 justify-between">
+          <div>
+          <div className="" onClick={() => handleTabs(1)}><PenCilsTab tabs={tabs} /></div>
+          <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
+          </div>
+          <div>
+          <div className="" onClick={() => handleTabs(2)}><MarketTab tabs={tabs} /></div>
+          <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
+          </div>
+          <div>
+          <div className="" onClick={() => handleTabs(3)}><DrawingTab tabs={tabs} /></div>
+          <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
+          </div>
+          <div>
+          <div className="" onClick={() => handleTabs(4)}><NoteBookTab tabs={tabs}  /></div>
+          <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}>sadasdasd</div>
+          </div>
+        
           
-          <div className="p-5 mx-1" onClick={() => handleTabs(2)}>two</div>
           </div>
            {/*tab content */}
-          <div>
-          <div className={clsx("",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
-          <div className={clsx("",tabs === 2 ? "block" : "hidden")}>content two</div>
+          <div className="pl-5 pr-[0.9rem]">
+          <div className={clsx("hidden",tabs === 1 ? "sm:block" : "sm:hidden")}><PenCilsContent /></div>
+          <div className={clsx("hidden",tabs === 2 ? "sm:block" : "sm:hidden")}><PenCilsContent /></div>
+
+          <div className={clsx("hidden",tabs === 3 ? "sm:block" : "sm:hidden")}><PenCilsContent /></div>
+
+          <div className={clsx("hidden ",tabs === 4 ? "sm:block" : "sm:hidden")}>content two</div>
           </div>
           </div>
         </>

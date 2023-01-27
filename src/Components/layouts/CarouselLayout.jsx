@@ -26,7 +26,7 @@ export const CarouselLayout = () => {
           </div>
         
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-[43px] mr-[50px]">
         {" "}
        <div className="flex">
        <div onClick={() => toggleTab(1)} className={toggleState === 1 ? "transition-opacity ease-in duration-700 opacity-100 hover:opacity-0 cursor-pointer w-[15px] h-[15px] rounded-full m-2  bg-black" : "cursor-pointer w-[15px] h-[15px] rounded-full m-2 transition bg-gray-500"}>
