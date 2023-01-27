@@ -11,6 +11,13 @@ export const CarouselLayout = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   }
+  const handleSlide = () => {
+    if (toggleState === 1) {
+      setToggleState(2)
+    } else if (toggleState === 2) {
+      setToggleState(1)
+    }
+  }
   console.log(toggleState);
   return (
     <div className="to-indigo-50 ">
@@ -18,7 +25,10 @@ export const CarouselLayout = () => {
       <div className="">
         <div className="">
           <div className="">
-            <div role="tabpanel" className=" transition duration-300 my-5">
+            <div role="tabpanel"  onDrop={e => handleDrop(e)}
+      onDragOver={e => handleDragOver(e)}
+      onDragEnter={e => handleDragEnter(e)}
+      onDragLeave={e => handleDragLeave(e)} className=" transition duration-300 my-5 cursor-pointer">
             {toggleState === 1 ?  <TabComponent /> : null}
             {toggleState === 2 ?  <Gallery /> : null}
             

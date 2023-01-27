@@ -38,7 +38,7 @@ import { PenCilsTab } from "../tabs/PencilsTab";
           <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
           </div>
           <div>
-          <div className="" onClick={() => handleTabs(3)}><DrawingTab tabs={tabs} /></div>
+          <div className=""  onClick={() => handleTabs(3)}><DrawingTab tabs={tabs} /></div>
           <div className={clsx("block sm:hidden",tabs === 1 ? "block" : "hidden")}><PenCilsContent /></div>
           </div>
           <div>
